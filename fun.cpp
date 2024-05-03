@@ -2,7 +2,7 @@
 void generateTable(int n, const string& filename) {
     ofstream file(filename);
     if (!file) {
-        cout << "Îøèáêà ïðè îòêðûòèè ôàéëà." << endl;
+        cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ð¸ Ñ„Ð°Ð¹Ð»Ð°." << endl;
         return;
     }
 
@@ -15,18 +15,18 @@ void generateTable(int n, const string& filename) {
     }
 
     file.close();
-    cout << "Òàáëèöà óñïåøíî ñîçäàíà è çàïèñàíà â ôàéë " << filename << endl;
+    cout << "Ð¢Ð°Ð±Ð»Ð¸Ñ†Ð° ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ ÑÐ¾Ð·Ð´Ð°Ð½Ð° Ð¸ Ð·Ð°Ð¿Ð¸ÑÐ°Ð½Ð° Ð² Ñ„Ð°Ð¹Ð»  " << filename << endl;
 }
 void calculateProducts(const string& inputFile, const string& outputFile) {
     ifstream file(inputFile);
     if (!file) {
-        cout << "Îøèáêà ïðè îòêðûòèè ôàéëà." << endl;
+        cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ð¸ Ñ„Ð°Ð¹Ð»Ð°." << endl;
         return;
     }
 
     ofstream output(outputFile);
     if (!output) {
-        cout << "Îøèáêà ïðè îòêðûòèè ôàéëà." << endl;
+        cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ð¸ Ñ„Ð°Ð¹Ð»Ð°." << endl;
         return;
     }
 
@@ -41,5 +41,5 @@ void calculateProducts(const string& inputFile, const string& outputFile) {
 
     file.close();
     output.close();
-    cout << "Ïðîèçâåäåíèÿ óñïåøíî âû÷èñëåíû è çàïèñàíû â ôàéë " << outputFile << endl;
+    cout << "ÐŸÑ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½Ð¸Ñ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð²Ñ‹Ñ‡Ð¸ÑÐ»ÐµÐ½Ñ‹ Ð¸ Ð·Ð°Ð¿Ð¸ÑÐ°Ð½Ñ‹ Ð² Ñ„Ð°Ð¹Ð» " << outputFile << endl;
 }
